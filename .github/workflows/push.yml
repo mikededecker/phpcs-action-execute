@@ -9,9 +9,6 @@ jobs:
         id: hello
         uses: mikededecker/phpcs-action@master
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Exit fail
         run: exit 1
