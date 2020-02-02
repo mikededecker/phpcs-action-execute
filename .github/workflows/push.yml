@@ -9,6 +9,6 @@ jobs:
         id: hello
         uses: mikededecker/phpcs-action@master
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          who-to-greet: 'Mona the Octocat'
       - name: Exit fail
         run: exit 1
