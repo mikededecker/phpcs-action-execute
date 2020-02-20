@@ -1,3 +1,2 @@
-Lorem ipsum
 <?php
 phpinfo();
