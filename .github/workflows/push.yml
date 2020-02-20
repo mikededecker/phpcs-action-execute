@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: mikededecker/phpcs-action@master
+        uses: Mike-MultiSafepay/phpcs-action@master
         with:
-          who-to-greet: 'Mona the Octocat'
+          github-token: ${{ GITHUB_TOKEN }}
       - name: Exit fail
         run: exit 1
