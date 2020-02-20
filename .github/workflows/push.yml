@@ -9,6 +9,6 @@ jobs:
         id: hello
         uses: Mike-MultiSafepay/phpcs-action@master
         with:
-          github-token: ${{ GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Exit fail
         run: exit 1
